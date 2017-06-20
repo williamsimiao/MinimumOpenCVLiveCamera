@@ -25,7 +25,7 @@ using namespace std;
         return;
     }
     [targetView.layer addSublayer:self.previewLayer];
-    self.previewLayer.contentsGravity = kCAGravityResizeAspectFill;
+    self.previewLayer.contentsGravity = kCAGravityCenter;
     self.previewLayer.frame = targetView.bounds;
     self.previewLayer.affineTransform = CGAffineTransformMakeRotation(M_PI / 2);
 }
@@ -34,10 +34,12 @@ using namespace std;
 {
     self = [super init];
     if (self) {
+       
+        
         _captureSession = [[AVCaptureSession alloc] init];
         _captureSession.sessionPreset = AVCaptureSessionPreset640x480;
         
-        AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+        AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionFront];
         NSError *error = nil;
         AVCaptureDeviceInput *input = [[AVCaptureDeviceInput alloc] initWithDevice:device error:&error];
         [_captureSession addInput:input];

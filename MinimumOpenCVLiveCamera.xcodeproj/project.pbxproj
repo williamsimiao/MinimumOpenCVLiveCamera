@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D10C61B1EF473D400A9C69F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D10C61A1EF473D400A9C69F /* opencv2.framework */; };
 		3D10C61D1EF4A7AF00A9C69F /* frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D10C61C1EF4A7AF00A9C69F /* frontalface_alt2.xml */; };
+		3DA06E231EF83C28002B39EE /* uperBody_cascade.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3DA06E221EF83C28002B39EE /* uperBody_cascade.xml */; };
 		E979E7D81BEB59710061BC68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E979E7D71BEB59710061BC68 /* AVFoundation.framework */; };
 		E979E7DA1BEB59740061BC68 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E979E7D91BEB59740061BC68 /* Accelerate.framework */; };
 		E979E7DC1BEB597D0061BC68 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E979E7DB1BEB597D0061BC68 /* CoreMedia.framework */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3D10C61A1EF473D400A9C69F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		3D10C61C1EF4A7AF00A9C69F /* frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = frontalface_alt2.xml; sourceTree = "<group>"; };
+		3DA06E221EF83C28002B39EE /* uperBody_cascade.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = uperBody_cascade.xml; sourceTree = "<group>"; };
 		E979E7B81BEB4D6F0061BC68 /* MinimumOpenCVLiveCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimumOpenCVLiveCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E979E7D71BEB59710061BC68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E979E7D91BEB59740061BC68 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,7 @@
 				E979E7B91BEB4D6F0061BC68 /* Products */,
 				E9AE913E1BFDC25700C25B99 /* MinimumOpenCVLiveCamera-Bridging-Header.h */,
 				3D10C61C1EF4A7AF00A9C69F /* frontalface_alt2.xml */,
+				3DA06E221EF83C28002B39EE /* uperBody_cascade.xml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +178,7 @@
 				E979E80B1BEB66DA0061BC68 /* Main.storyboard in Resources */,
 				E979E8091BEB66DA0061BC68 /* Assets.xcassets in Resources */,
 				E979E80A1BEB66DA0061BC68 /* LaunchScreen.storyboard in Resources */,
+				3DA06E231EF83C28002B39EE /* uperBody_cascade.xml in Resources */,
 				3D10C61D1EF4A7AF00A9C69F /* frontalface_alt2.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
